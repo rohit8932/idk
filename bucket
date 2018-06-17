@@ -1,0 +1,19 @@
+gcloud auth login
+
+gcloud config set project project-name
+
+-create bucket name
+gsutil mb gs://bucket-name
+
+-upload a file 
+gsutil cp hello.txt gs://bucket-name
+
+-list all objects
+gsutil ls -r gs://bucket-name
+
+-downloading file
+gsutil cp gs://bucket-name/hellow.txt newhellow.txt
+
+-renaming file
+gsutil mv gs://bucket-name/hello.txt gs://bucket-name/newname.txt
+
