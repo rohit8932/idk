@@ -43,7 +43,7 @@ int partition(int arr[], int low, int high) {
 	}
 	pindex--;
 	swap(arr[low], arr[pindex]);
-	
+
 	return pindex;
 }
 
